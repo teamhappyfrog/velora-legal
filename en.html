@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Velora Privacy Policy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Pretendard:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --plum: #8E3DA6;
+    --plum-soft: #F4EEF9;
+    --plum-deep: #6B2C82;
+    --ink: #1A1A1A;
+    --ink-muted: #666666;
+    --ink-faint: #999999;
+    --border: #ECECEC;
+    --bg: #FEFEFE;
+    --display: 'Cormorant Garamond', Georgia, serif;
+    --body: 'Pretendard', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    font-family: var(--body);
+    background: var(--bg);
+    color: var(--ink);
+    line-height: 1.7;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  .lang-switch {
+    position: fixed; top: 24px; right: 24px;
+    display: flex; gap: 4px;
+    background: white; border: 1px solid var(--border);
+    border-radius: 999px; padding: 4px;
+    font-size: 12px; z-index: 100;
+  }
+  .lang-switch a {
+    text-decoration: none; color: var(--ink-muted);
+    padding: 6px 14px; border-radius: 999px;
+    font-weight: 500; transition: all 0.2s; letter-spacing: 0.5px;
+  }
+  .lang-switch a.active { background: var(--plum); color: white; }
+  .lang-switch a:hover:not(.active) { color: var(--ink); }
+  .container {
+    max-width: 720px; margin: 0 auto;
+    padding: 100px 32px 120px;
+  }
+  header {
+    text-align: center; margin-bottom: 80px;
+    padding-bottom: 60px; border-bottom: 1px solid var(--border);
+  }
+  .wordmark {
+    font-family: var(--display); font-size: 48px;
+    font-style: italic; color: var(--plum); font-weight: 500;
+    letter-spacing: -1px; margin-bottom: 16px; line-height: 1;
+  }
+  h1 {
+    font-family: var(--body); font-size: 22px; font-weight: 600;
+    color: var(--ink); letter-spacing: -0.3px; margin-bottom: 12px;
+  }
+  .meta { font-size: 13px; color: var(--ink-faint); letter-spacing: 0.3px; }
+  .intro {
+    background: var(--plum-soft); padding: 24px 28px;
+    border-radius: 12px; margin-bottom: 56px;
+    font-size: 15px; line-height: 1.75; color: var(--ink);
+  }
+  .intro strong { color: var(--plum-deep); font-weight: 600; }
+  section { margin-bottom: 48px; }
+  h2 {
+    font-family: var(--body); font-size: 16px; font-weight: 600;
+    color: var(--plum); margin-bottom: 20px;
+    padding-bottom: 12px; border-bottom: 1px solid var(--border);
+    display: flex; align-items: baseline; gap: 12px;
+  }
+  h2 .num {
+    font-family: var(--display); font-style: italic; font-weight: 500;
+    font-size: 22px; color: var(--plum); letter-spacing: 0; min-width: 24px;
+  }
+  h3 {
+    font-size: 14px; font-weight: 600; color: var(--ink);
+    margin-top: 24px; margin-bottom: 8px;
+  }
+  h3:first-of-type { margin-top: 0; }
+  p {
+    font-size: 14.5px; color: var(--ink);
+    margin-bottom: 12px; line-height: 1.75;
+  }
+  ul { list-style: none; margin-bottom: 12px; }
+  ul li {
+    font-size: 14.5px; color: var(--ink);
+    padding-left: 18px; position: relative;
+    margin-bottom: 6px; line-height: 1.7;
+  }
+  ul li::before {
+    content: "·"; position: absolute; left: 6px; top: 0;
+    color: var(--plum); font-weight: bold;
+  }
+  .field {
+    display: grid; grid-template-columns: 110px 1fr;
+    gap: 16px; padding: 10px 0;
+    font-size: 14px; border-top: 1px dashed var(--border);
+  }
+  .field:first-child { border-top: none; }
+  .field .label {
+    color: var(--ink-faint); font-weight: 500;
+    font-size: 13px; letter-spacing: 0.3px;
+  }
+  .field .value { color: var(--ink); line-height: 1.6; }
+  .field .value a {
+    color: var(--plum); text-decoration: none;
+    border-bottom: 1px solid transparent; transition: border-color 0.2s;
+  }
+  .field .value a:hover { border-bottom-color: var(--plum); }
+  .data-block {
+    background: white; border: 1px solid var(--border);
+    border-radius: 10px; padding: 20px 24px; margin-bottom: 16px;
+  }
+  .data-block h3 { margin-top: 0; color: var(--plum-deep); font-size: 14px; }
+  .dpo-block {
+    background: var(--plum-soft); padding: 24px;
+    border-radius: 10px; margin-top: 16px;
+  }
+  .dpo-block .field { border-color: rgba(142, 61, 166, 0.15); }
+  .contact {
+    margin-top: 60px; padding: 32px;
+    border-top: 1px solid var(--border); text-align: center;
+  }
+  .contact .label {
+    font-size: 12px; color: var(--ink-faint);
+    letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 12px;
+  }
+  .contact a {
+    font-family: var(--display); font-size: 22px;
+    font-style: italic; color: var(--plum);
+    text-decoration: none; font-weight: 500;
+    border-bottom: 1px solid transparent; transition: border-color 0.2s;
+  }
+  .contact a:hover { border-bottom-color: var(--plum); }
+  footer {
+    margin-top: 80px; text-align: center;
+    font-size: 12px; color: var(--ink-faint); letter-spacing: 0.3px;
+  }
+  footer .frog {
+    font-family: var(--display); font-style: italic;
+    color: var(--plum); font-size: 14px; margin-bottom: 4px;
+  }
+  @media (max-width: 600px) {
+    .container { padding: 80px 20px 80px; }
+    .wordmark { font-size: 40px; }
+    header { margin-bottom: 56px; padding-bottom: 40px; }
+    .intro { padding: 20px; font-size: 14px; }
+    .field { grid-template-columns: 90px 1fr; gap: 12px; font-size: 13.5px; }
+    .lang-switch { top: 16px; right: 16px; }
+  }
+</style>
+</head>
+<body>
+
+<nav class="lang-switch">
+  <a href="index.html">KO</a>
+  <a href="en.html" class="active">EN</a>
+</nav>
+
+<div class="container">
+
+  <header>
+    <div class="wordmark">Velora</div>
+    <h1>Privacy Policy</h1>
+    <div class="meta">Effective May 22, 2026</div>
+  </header>
+
+  <div class="intro">
+    Happy Frog Studio (<strong>"we"</strong>, <strong>"us"</strong>, <strong>"our"</strong>) takes your privacy seriously. This Privacy Policy explains what information we collect through the Velora app (the <strong>"App"</strong>), how we handle it, and what rights you have.
+  </div>
+
+  <section>
+    <h2><span class="num">1</span>Information We Process</h2>
+
+    <div class="data-block">
+      <h3>Workout Photos</h3>
+      <div class="field">
+        <div class="label">What</div>
+        <div class="value">Photos you add to your workout entries</div>
+      </div>
+      <div class="field">
+        <div class="label">How collected</div>
+        <div class="value">You select or capture photos directly within the App</div>
+      </div>
+      <div class="field">
+        <div class="label">Purpose</div>
+        <div class="value">Visualize workouts and display them on the calendar</div>
+      </div>
+      <div class="field">
+        <div class="label">Handling</div>
+        <div class="value">Stored only on your device. Not transmitted to our servers or any third party.</div>
+      </div>
+    </div>
+
+    <div class="data-block">
+      <h3>Workout Data (steps, distance, duration, calories, etc.)</h3>
+      <div class="field">
+        <div class="label">What</div>
+        <div class="value">Activity data read from Apple Health or Samsung Health</div>
+      </div>
+      <div class="field">
+        <div class="label">How collected</div>
+        <div class="value">Automatically read via Apple HealthKit / Samsung Health SDK after you grant permission</div>
+      </div>
+      <div class="field">
+        <div class="label">Purpose</div>
+        <div class="value">Auto-collect workout records, display statistics, calculate goal progress</div>
+      </div>
+      <div class="field">
+        <div class="label">Handling</div>
+        <div class="value">Stored only on your device. Not transmitted to our servers or any third party. We only read from Apple Health / Samsung Health. We never write data back.</div>
+      </div>
+    </div>
+
+    <div class="data-block">
+      <h3>Advertising Identifier</h3>
+      <div class="field">
+        <div class="label">What</div>
+        <div class="value">Advertising ID (Apple IDFA / Google Advertising ID)</div>
+      </div>
+      <div class="field">
+        <div class="label">How collected</div>
+        <div class="value">Automatically collected via Google AdMob SDK</div>
+      </div>
+      <div class="field">
+        <div class="label">Purpose</div>
+        <div class="value">Ad delivery and measurement within the App</div>
+      </div>
+      <div class="field">
+        <div class="label">Reference</div>
+        <div class="value">We do not collect this directly. <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google AdMob's Privacy Policy</a> applies.</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="num">2</span>Information We Do Not Collect</h2>
+    <ul>
+      <li>User accounts (Velora does not require sign-up)</li>
+      <li>Personal identifiers such as email, phone number, or name</li>
+      <li>In-app behavior analytics</li>
+      <li>Location data</li>
+      <li>Contacts, photos outside what you choose, or any data requiring additional permissions</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span class="num">3</span>Data Retention and Deletion</h2>
+    <ul>
+      <li>All workout photos and data remain on your device. <strong>We do not store them separately.</strong></li>
+      <li>Uninstalling the App removes all data automatically (no separate process required).</li>
+      <li>You can delete individual workout entries or photos anytime through the App.</li>
+      <li>Advertising identifiers are processed and deleted according to Google AdMob's policies (see Section 1.3 reference link).</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span class="num">4</span>Third-Party Sharing</h2>
+    <p>We do not share any personal information with third parties. Advertising identifiers are processed directly by Google AdMob as described in Section 1.3.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">5</span>Data Processors</h2>
+    <p>We engage the following service provider to operate the App. The processor handles data solely within the scope of the entrusted purpose.</p>
+    <div class="data-block">
+      <div class="field">
+        <div class="label">Processor</div>
+        <div class="value">Google LLC (AdMob)</div>
+      </div>
+      <div class="field">
+        <div class="label">Service</div>
+        <div class="value">In-app ad delivery and measurement</div>
+      </div>
+      <div class="field">
+        <div class="label">Data handled</div>
+        <div class="value">Advertising Identifier (Apple IDFA / Google Advertising ID)</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="num">6</span>Your Rights and How to Exercise Them</h2>
+    <p>You have the following rights and can exercise them at any time.</p>
+    <ul>
+      <li><strong>Access, Correction, Deletion:</strong> All workout records and photos are stored on your device, so you can view, modify, and delete them directly through the App.</li>
+      <li><strong>Withdraw Permissions:</strong> You can revoke Apple Health / Samsung Health permissions anytime through your device settings.</li>
+      <li><strong>Limit Ad Tracking:</strong> You can limit ad tracking through your iOS / Android settings.</li>
+      <li><strong>Bulk Deletion:</strong> Uninstalling the App deletes all data stored on your device.</li>
+      <li>To exercise these rights or for inquiries, contact the Data Protection Officer below.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span class="num">7</span>Automatically Collected Information</h2>
+    <p>This App does not use cookies or web tracking technologies. The Advertising Identifier described in Section 1.3 is automatically collected and processed by the Google AdMob SDK.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">8</span>Children's Privacy</h2>
+    <p>This App is not directed to children under 14, and we do not knowingly collect personal information from children under 14. If a child under 14 uses this App, parental or legal guardian consent is required. Any information collected without proper consent will be deleted immediately upon discovery.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">9</span>Security Measures</h2>
+    <ul>
+      <li>All personal information is stored locally on your device and is not transmitted to our servers.</li>
+      <li>We do not operate a separate personal information database, eliminating the risk of external breaches at the source.</li>
+      <li>Advertising identifiers are handled according to Google AdMob's security policies.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span class="num">10</span>Data Protection Officer</h2>
+    <p>For privacy-related questions, complaints, or remedy requests, please contact our Data Protection Officer.</p>
+    <div class="dpo-block">
+      <div class="field">
+        <div class="label">Officer</div>
+        <div class="value">Happy Frog Studio Founder</div>
+      </div>
+      <div class="field">
+        <div class="label">Email</div>
+        <div class="value"><a href="mailto:team.happyfrog@gmail.com">team.happyfrog@gmail.com</a></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="num">11</span>Changes to This Policy</h2>
+    <p>If this Privacy Policy changes, we will provide notice through the App or this page at least 7 days before the effective date. For material changes (additional data collection, purpose changes, third-party sharing, etc.), we will provide notice at least 30 days in advance.</p>
+  </section>
+
+  <div class="contact">
+    <div class="label">Contact</div>
+    <a href="mailto:team.happyfrog@gmail.com">team.happyfrog@gmail.com</a>
+  </div>
+
+  <footer>
+    <div class="frog">Happy Frog Studio</div>
+    <div>&copy; 2026 All rights reserved</div>
+  </footer>
+
+</div>
+
+</body>
+</html>
